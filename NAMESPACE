@@ -1,0 +1,12 @@
+useDynLib(pgbart)
+
+export(pgbart_train,pgbart_predict,pdpgbart, pd2pgbart,plot.pgbart)
+
+importFrom(BayesTree, makeind)
+importFrom("graphics", "abline", "contour", "image", "lines", "par","plot", "title")
+importFrom("stats", "lm", "pnorm", "quantile")
+importFrom("utils", "read.table", "write.table")
+S3method(plot, pgbart)
+S3method(plot, pdpgbart)
+S3method(plot, pd2pgbart)
+
