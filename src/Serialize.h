@@ -10,6 +10,8 @@
 class BartNode
 {
 public:
+    BartNode();
+    bool Right(double* x);
     int isbot;
     int var;
     double split;
@@ -17,14 +19,25 @@ public:
     BartNode* LeftC;
     BartNode* RightC;
 
-    bool Right(double *x){
-        int i;
-        if(x[this->var] > this->split)
-            return true;
-        else
-            return false;
-    }
+    
 };
+
+BartNode::BartNode(){
+    this->isbot = 1;
+    this->var = 1;
+    this->split = 1;
+    this->node_mu = 1;
+    this->LeftC = NULL;
+    this->RightC = NULL;
+}
+
+bool BartNode::Right(double *x){
+    int i;
+    if(x[this->var] > this->split)
+        return true;
+    else
+        return false;
+}
 
 
 void write_node(FILE* fp, Node* root){

@@ -2,7 +2,7 @@ Package: pgbart
 Type: Package
 Title: Bayesian Additive Regression Trees Using Particle Gibbs Sampler
         and Gibbs/Metropolis-Hastings Sampler
-Version: 0.6.10
+Version: 0.6.11
 Authors@R: c(person("Pingyu","Wang", role = c("aut", "cre"),email = "applewangpingyu@gmail.com"),
             person("Dai","Feng", role = "aut",email = "dai_feng@merck.com"),
             person("Yang","Bai",  role = "aut",email = "by0132@live.cn"),
@@ -31,6 +31,6 @@ Imports: BayesTree (>= 0.3-1.4)
 License: GPL (>= 2)
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2018-06-25 06:14:52 UTC; Lilac
+Packaged: 2018-07-01 09:22:16 UTC; Lilac
 Repository: CRAN
-Date/Publication: 2018-06-30 17:04:14 UTC
+Date/Publication: 2018-07-01 15:20:02 UTC

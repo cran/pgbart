@@ -306,7 +306,7 @@ void Resample(Particle** particle_vec, double* log_weight_vec, int size){
 
     sum_log = Lib::softmax(log_weight_vec, weight_norm, size, tmax);
     log_pd = log(sum_log) + tmax;
-    log_numP = log(size);
+    log_numP = log((double)size);
 
     for(i = 1; i <= size; i++)
         log_weight_vec[i] = log_pd - log_numP;
