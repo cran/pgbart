@@ -1,6 +1,5 @@
 bibentry(bibtype = "article",
-         title = "Particle Gibbs for Bayesian additive regression trees[C]
-             Artificial Intelligence and Statistics",
+         title = "Particle Gibbs for Bayesian additive regression trees",
          author = c(person("Balaji","Lakshminarayanan"),
              person("Daniel","M. Roy"),
              person("Yee","Whye","Teh")),
@@ -10,4 +9,23 @@ on Artificial Intelligence and Statistics (AISTATS)",
          publisher = "JMLR: W&CP",
          url = "http://proceedings.mlr.press/v38/lakshminarayanan15.pdf",
          volume = 38,
-         year = 2015)
+         year = 2015
+)
+
+bibentry(bibtype = "article",
+         title = "BART: Bayesian additive regression trees",
+         author = c(
+             person("Chipman"),
+             person("Hugh","A"),
+             person("George"),
+             person("Edward", "I"),
+             person("McCulloch"),
+             person("Robert", "E")
+         ),
+         pages = "266--298",
+         journal = "The Annals of Applied Statistics",
+         publisher = "Institute of Mathematical Statistics",
+         url = "https://doi.org/10.1214/09-aoas285",
+         volume = 4,
+         year = 2010
+)

@@ -288,13 +288,6 @@ Breiman, L. (1996)
    Statistics Department, University of California, Berkeley, CA, USA.
 }
 
-\author{
-Pingyu Wang: \email{applewangpingyu@gmail.com}\cr
-Hugh Chipman: \email{hugh.chipman@gmail.com}\cr
-Robert McCulloch: \email{robert.e.mcculloch@gmail.com}\cr
-
-
-}
 \seealso{
 \code{\link{pdpgbart}}
 }

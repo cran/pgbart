@@ -199,12 +199,6 @@ Friedman, J. H. (2001)
         \emph{The Annals of Statistics}, \bold{29}, 1189--1232.
 }
 
-\author{
-Pingyu Wang: \email{applewangpingyu@gmail.com}\cr
-Hugh Chipman: \email{hugh.chipman@gmail.com}\cr
-Robert McCulloch: \email{robert.e.mcculloch@gmail.com}\cr
-
-}
 \examples{
 ## simulate data
 f <- function(x) { return(0.5 * x[,1] + 2 * x[,2] * x[,3]) }
