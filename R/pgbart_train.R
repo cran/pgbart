@@ -7,14 +7,14 @@ pgbart_train = function(
    power=2, base=.95,
    binaryOffset=0,
    ntree=200,
-   ndpost=1000, nskip=100, 
+   ndpost=1000, nskip=100,
    printevery=100, keepevery=1, keeptrainfits=TRUE,
    usequants=FALSE, numcut=100, printcutoffs=0,
    verbose=TRUE
 )
 {
    binary=FALSE
-   
+
    if(is.factor(y.train)) {
       if(length(levels(y.train)) != 2) stop("y.train is a factor with number of levels != 2")
       binary = TRUE

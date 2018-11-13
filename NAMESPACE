@@ -1,4 +1,4 @@
-useDynLib(pgbart)
+useDynLib(pgbart, .registration = TRUE)
 
 export(pgbart_train,pgbart_predict,pdpgbart, pd2pgbart,plot.pgbart)
 

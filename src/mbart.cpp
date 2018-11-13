@@ -507,9 +507,9 @@ void mpredict(int* inrow, int* idim, double* idata,
    }
 
    FILE* fp = fopen(model_path, "r");
-   float rgy, ymin, binary_offset;
+   double rgy, ymin, binary_offset;
    int ncpost, ntree, binary;
-   fscanf(fp, "%f %f %d %d %f", &rgy, &ymin, &ncpost, &binary, &binary_offset);
+   fscanf(fp, "%lf %lf %d %d %lf", &rgy, &ymin, &ncpost, &binary, &binary_offset);
    fscanf(fp, "%d", &ntree);
 
    std::vector<BartNode*> trees(ntree + 1);

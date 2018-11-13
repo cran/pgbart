@@ -19,7 +19,7 @@ public:
     BartNode* LeftC;
     BartNode* RightC;
 
-    
+
 };
 
 BartNode::BartNode(){
@@ -63,9 +63,9 @@ void add_itr(FILE* fp, std::vector<Node*> trees, int Ntrees){
 void read_node(FILE* fp, BartNode* root){
     fscanf(fp, "%d", &(root->isbot));
     if(root->isbot){
-        fscanf(fp, "%f", &(root->node_mu));
+        fscanf(fp, "%lf", &(root->node_mu));
     }else{
-        fscanf(fp, "%d %f", &(root->var), &(root->split));
+        fscanf(fp, "%d %lf", &(root->var), &(root->split));
         BartNode* left = new BartNode;
         BartNode* right = new BartNode;
         root->LeftC = left;
@@ -77,8 +77,6 @@ void read_node(FILE* fp, BartNode* root){
 
 
 void read_itr(FILE* fp, std::vector<BartNode*> trees, int Ntrees){
-    int isbot, var;
-    double split, node_mu;
     for(int i = 1; i <= Ntrees; i++){
         read_node(fp, trees[i]);
     }
@@ -98,8 +96,9 @@ void clear_itr(std::vector<BartNode*> trees, int Ntrees){
 }
 
 double predict(BartNode* node, double* x){
-    if(node->isbot)
-        return node->node_mu;
+    if(node->isbot){
+      return node->node_mu;
+    }
     else{
         if(node->Right(x))
             return predict(node->RightC, x);
