@@ -29,7 +29,6 @@ void InitParam(Param* param, double ntree, double kfac, double sigdf, double sig
     //Rprintf("prec = %f\n", prec);
     //Rprintf("beta_bart = %f\n", param->beta_bart);
     //Rprintf("lambda_bart = %f\n", param->lambda_bart);
-
 }
 
 double compute_gamma_param(double min_val, double alpha, double q, double init_val){
@@ -52,7 +51,7 @@ double compute_gamma_param(double min_val, double alpha, double q, double init_v
 
     } while ((x1 - x2 > 1.49012e-8) || (x2 - x1 > 1.49012e-8));
     try{
-      if (abs(pgamma(min_val, alpha, 1 / x1, 0, 0) - q) > 1e-3) {
+      if (fabs(pgamma(min_val, alpha, 1 / x1, 0, 0) - q) > 1e-3) {
         throw x1;
       }
     }

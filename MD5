@@ -1,4 +1,4 @@
-9349cae1e1eda63606694936a51241ad *DESCRIPTION
+d344de73b161a6acb14454c02d54add8 *DESCRIPTION
 16a20c9029d11e6449c2b626c0946a35 *NAMESPACE
 32def26f260089c18c9cf79ec3047d3a *R/pd2pgbart.R
 13015cea2f82ba25213d6ab1733521ba *R/pdpgbart.R
@@ -28,7 +28,7 @@ dd903b68f7f913fb7b4e8e6d4e1d8ade *src/Makevars.win
 a4dec5901234dcce05c78185b9f686f9 *src/MuS.h
 83bea033d03fdbf0f11827fe062b8bc3 *src/Node.cpp
 ea005b12f7822c0900142cea63e8cb78 *src/Node.h
-6d3c927d23b975243f46380a5f4e06b0 *src/Param.cpp
+9450ab6129e079142e3d25f5316b60fa *src/Param.cpp
 71524c7b31a179cc2009f000e50e50bc *src/Param.h
 43f88919c5817f2282d94599e826b2f0 *src/Prior.cpp
 8f6f9be14c9acd19890e1644a2febd81 *src/Prior.h
